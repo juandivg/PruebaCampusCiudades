@@ -1,0 +1,44 @@
+{
+  "Departamentos": [
+    {
+      "id": 1,
+      "nomDepartamento": "Santander"
+    },
+    {
+      "id": 2,
+      "nomDepartamento": "Cundinamarca"
+    }
+  ],
+  "Ciudades": [
+    {
+      "id": 1,
+      "nomCiudad": "Bucaramanga",
+      "departamentoId": 1,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Metro_de_Medell%C3%ADn%2C_Colombia.jpg/1920px-Metro_de_Medell%C3%ADn%2C_Colombia.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
+    },
+    {
+      "id": 2,
+      "nomCiudad": "Cucuta",
+      "departamentoId": 1,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Metro_de_Medell%C3%ADn%2C_Colombia.jpg/1920px-Metro_de_Medell%C3%ADn%2C_Colombia.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
+    },
+    {
+      "id": 3,
+      "nomCiudad": "Bogota",
+      "departamentoId": 2,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Metro_de_Medell%C3%ADn%2C_Colombia.jpg/1920px-Metro_de_Medell%C3%ADn%2C_Colombia.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Rutas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col" id="classBody" >
+    <header class="flex justify-center items-center bg-sky-300 h-[8vh] px-[5%] justify-between">
+        <p class="font-bold text-[30px]">Gestor de ciudades</p>
+        <div>
+            <button class="p-[10px] bg-white" id="claro">Tema claro</button>
+            <button class="p-[10px] bg-black text-white" id="oscuro">Tema oscuro</button>
+        </div>
+    </header>
+    <div class="flex">
+        
+        <div class="absolute w-[50%] px-[10px] bg-white border rounded-xl h-[28vh] mb-[30%] mx-[25%]" id="contenedorPrincipal">
+            <div class="w-full bg-blue-400 mt-[10px] flex justify-center border rounded-xl items-center">
+                <h1 class="text-[20px] font-bold">Agregar Departamento</h1>
+            </div>
+            <form id="formu" class="flex flex-col justify-between text-[20px] p-[20px]">
+                <div class="flex flex-col w-full mb-[20px]">
+                    <label for="puntos">Cantidad de ciudades del departamento</label>
+                    <input class="flex w-full border border-black rounded-xl" type="number" id="ciudades" required>
+                </div>
+                <button class="bg-blue-600 w-[20%] m-auto text-white border rounded-xl" type="submit">Enviar</button>
+
+            </form>
+        </div>
+        <button class="absolute bg-blue-600 w-[8%] text-white mt-[30vh] mx-[46%] rounded-xl" id="listBtn">Listar</button>
+        <table class="absolute w-full mt-[35vh]" id="tabla">
+            <thead>
+                <tr class="bg-gray-300">
+                    <th>
+                        <div class="flex justify-center items-center">
+                            <p>Nombre del Departamento</p>
+                        </div>
+        
+                    </th>
+                <th>
+                    <div class="flex justify-center items-center">
+                        <p>Id del Departamento</p>
+    
+                    </div>
+
+                </th>
+
+                    <th>
+                        <div class="flex justify-center items-center">
+                            <p>Ver Ciudades</p>
+                        </div>
+                    </th>
+                
+                    <th>
+                        <div class="flex justify-center items-center">
+                            <p>Actualizar Departamento</p>
+                        
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex justify-center items-center">
+                            <p>Actualizar Ciudades</p>
+                        
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex justify-center items-center">
+                            <p>Agregar Ciudad</p>
+                        
+                        </div>
+                    </th>
+                <th>
+                    <div class="flex justify-center items-center">
+                        <p>Eliminar Departamento</p>
+                    </div>
+                </th>
+                </tr>
+            </thead>
+            <tbody class="bg-white hidden" id="cont">
+
+            </tbody>
+        </table>
+        <div id="modal" class="absolute bg-sky-300 border rounded-xl m-auto w-[50%] inset-0 h-[50vh] flex flex-col items-center justify-center hidden">
+            <div id="modalchild" class="flex bg-white flex-row justify-evenly w-[80%] rounded shadow-lg">
+
+            </div>
+            <button id="closemodal" class="mt-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Cerrar</button>
+        </div>
+        <div id="contenedorUpdate" class="absolute h-[92vh] bg-white w-full hidden">
+            <div class="w-full bg-blue-400 mt-[10px] flex justify-center border rounded-xl items-center">
+                <h1 class="text-[20px] font-bold">Actualizar Departamento</h1>
+            </div>
+            <form id="formUpdate" class="flex flex-col justify-between">
+    
+            </form>
+        </div>
+        <div id="contenedorUpdateCiudades" class="absolute h-[92vh] bg-white w-full hidden">
+            <div class="w-full bg-blue-400 mt-[10px] flex justify-center border rounded-xl items-center">
+                <h1 class="text-[20px] font-bold">Actualizar Ciudades</h1>
+            </div>
+            <form id="formUpdateCiudades" class="flex flex-col justify-between">
+    
+            </form>
+        </div>
+        <div id="contenedorUpdateAgregar" class="absolute h-[92vh] bg-white w-full hidden">
+            <div class="w-full bg-blue-400 mt-[10px] flex justify-center border rounded-xl items-center">
+                <h1 class="text-[20px] font-bold">Agregar Ciudad</h1>
+            </div>
+            <form id="formUpdateAgregar" class="flex flex-col justify-between">
+    
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
